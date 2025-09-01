@@ -31,7 +31,7 @@ const i18n = createI18n({
 })
 
 // Function to change locale dynamically
-export const setLocale = (locale: string) => {
+export const setLocale = (locale: 'en' | 'fr' | 'es') => {
   if (i18n.global.locale.value !== locale) {
     i18n.global.locale.value = locale
   }

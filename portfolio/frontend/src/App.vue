@@ -89,7 +89,7 @@ const toggleLanguageMenu = () => {
   isLanguageMenuOpen.value = !isLanguageMenuOpen.value
 }
 
-const changeLanguage = async (lang: string) => {
+const changeLanguage = async (lang: 'en' | 'es' | 'fr') => {
   console.log('Changing language to:', lang)
   languageStore.setLanguage(lang)
   isLanguageMenuOpen.value = false

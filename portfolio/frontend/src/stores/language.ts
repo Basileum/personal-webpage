@@ -7,7 +7,7 @@ export const useLanguageStore = defineStore('language', () => {
   const savedLanguage = typeof window !== 'undefined' ? localStorage.getItem('portfolio-language') : null
   const currentLanguage = ref(savedLanguage || 'en')
 
-  const setLanguage = (lang: string) => {
+  const setLanguage = (lang: 'en' | 'es' | 'fr') => {
     console.log('Setting language to:', lang)
     currentLanguage.value = lang
     if (typeof window !== 'undefined') {
@@ -28,10 +28,11 @@ export const useLanguageStore = defineStore('language', () => {
       const saved = localStorage.getItem('portfolio-language')
       console.log('Language store initialization - saved language:', saved)
       if (saved && ['en', 'es', 'fr'].includes(saved)) {
-        currentLanguage.value = saved
+        const validLang = saved as 'en' | 'es' | 'fr'
+        currentLanguage.value = validLang
         // Update i18n locale on initialization
-        setLocale(saved)
-        console.log('Language store initialized with:', saved)
+        setLocale(validLang)
+        console.log('Language store initialized with:', validLang)
       } else {
         console.log('Language store initialized with default: en')
       }
