@@ -54,7 +54,6 @@ const PORT = process.env.PORT || 3002;
 // Middleware
 app.use(cors());
 app.use(express.json());
-app.use(express.static(path.join(__dirname, '../frontend/dist')));
 
 // Configure marked for safe HTML rendering
 marked.setOptions({
@@ -219,9 +218,9 @@ app.get('/api/project-images/:projectSlug', async (req: Request, res: Response):
   }
 });
 
-// Serve Vue app for all other routes
-app.get('*', (req: Request, res: Response): void => {
-  res.sendFile(path.join(__dirname, '../frontend/dist', 'index.html'));
+// Health check endpoint
+app.get('/api/health', (req: Request, res: Response): void => {
+  res.json({ status: 'OK', timestamp: new Date().toISOString() });
 });
 
 app.listen(PORT, (): void => {
