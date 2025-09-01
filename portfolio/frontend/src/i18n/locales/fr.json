@@ -1,0 +1,60 @@
+{
+  "nav": {
+    "about": "Présentation",
+    "projects": "Projets",
+    "experience": "Expériences",
+    "contact": "Contact"
+  },
+  "sections": {
+    "about": {
+      "title": "Présentation",
+      "loading": "Chargement du profil...",
+      "error": "Erreur lors du chargement du profil",
+      "softSkills": "Compétences transversales",
+    "technicalSkills": "Compétences Techniques",
+    "frontend": "Frontend",
+    "backend": "Backend",
+    "data": "Données",
+    "infrastructure": "Infrastructure",
+    "tools": "Outils"
+    },
+    "projects": {
+      "title": "Projets",
+      "subtitle": "Une sélection de mes travaux récents et projets clients",
+      "loading": "Chargement des projets...",
+      "error": "Erreur lors du chargement des projets",
+      "more": "de plus",
+      "technologies": "Technologies",
+      "description": "Description",
+      "viewDemo": "Voir la Démo",
+      "viewCode": "Voir le Code"
+    },
+    "experience": {
+      "title": "Expériences",
+      "subtitle": "Mon parcours professionnel et historique de travail",
+          "loading": "Chargement de l'expérience...",
+    "error": "Erreur lors du chargement de l'expérience",
+    "present": "Présent",
+    "downloadCV": "Télécharger le CV"
+    },
+    "contact": {
+      "title": "Contact",
+      "email": "Email :",
+      "github": "GitHub :",
+      "linkedin": "LinkedIn :",
+      "website": "Site web :"
+    }
+  },
+  "ui": {
+    "theme": {
+      "dark": "Passer au mode clair",
+      "light": "Passer au mode sombre"
+    },
+    "language": {
+      "title": "Langue",
+      "en": "Anglais",
+      "fr": "Français",
+      "es": "Espagnol"
+    }
+  }
+}

@@ -1,0 +1,83 @@
+:root {
+  --bg: #0b1020;           /* deep slate */
+  --panel: #11172e;        /* card background */
+  --ink: #e6ecff;          /* primary text */
+  --muted: #9fb0d8;        /* secondary text */
+  --accent: #7aa2ff;       /* links and accents */
+  --ring: #283258;         /* borders */
+}
+
+html, body { 
+  margin: 0; 
+  padding: 0; 
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+  line-height: 1.6;
+  color: var(--ink);
+  background: radial-gradient(1000px 700px at 80% -10%, #1a2244 0%, var(--bg) 55%) fixed,
+              radial-gradient(1200px 800px at -10% 120%, #182040 0%, var(--bg) 60%) fixed,
+              var(--bg);
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* Light theme body background - light blue gradient */
+html[style*="--bg: #ffffff"] body {
+  background: radial-gradient(1000px 700px at 80% -10%, #e3f2fd 0%, #ffffff 55%) fixed,
+              radial-gradient(1200px 800px at -10% 120%, #f3e5f5 0%, #ffffff 60%) fixed,
+              #ffffff !important;
+}
+
+/* Main content */
+.main-content {
+  padding-top: 70px; /* Account for fixed header */
+}
+
+/* Section base styles */
+.section {
+  padding: 4rem 0;
+}
+
+.section-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.section-content h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: left;
+  margin-bottom: 1rem;
+  color: var(--ink);
+}
+
+.section-subtitle {
+  text-align: center;
+  color: var(--muted);
+  margin-bottom: 3rem;
+  font-size: 1.1rem;
+}
+
+.loading, .error {
+  text-align: center;
+  padding: 2rem;
+  color: var(--muted);
+}
+
+.error {
+  color: #ff6b6b;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .section-content h2 {
+    font-size: 2rem;
+  }
+  
+  .section-content {
+    padding: 0 1rem;
+  }
+}

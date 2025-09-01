@@ -1,0 +1,48 @@
+{
+  "nav": {
+    "about": "Acerca de",
+    "projects": "Proyectos",
+    "experience": "Experiencia",
+    "contact": "Contacto"
+  },
+  "sections": {
+    "about": {
+      "title": "Acerca de",
+      "loading": "Cargando perfil...",
+      "error": "Error al cargar el perfil"
+    },
+    "projects": {
+      "title": "Proyectos",
+      "subtitle": "Una selección de mis trabajos recientes y proyectos de clientes",
+      "loading": "Cargando proyectos...",
+      "error": "Error al cargar los proyectos",
+      "more": "más"
+    },
+    "experience": {
+      "title": "Experiencia",
+      "subtitle": "Mi trayectoria profesional e historial de trabajo",
+      "loading": "Cargando experiencia...",
+      "error": "Error al cargar la experiencia",
+      "present": "Presente"
+    },
+    "contact": {
+      "title": "Contacto",
+      "email": "Email:",
+      "github": "GitHub:",
+      "linkedin": "LinkedIn:",
+      "website": "Sitio web:"
+    }
+  },
+  "ui": {
+    "theme": {
+      "dark": "Cambiar a modo claro",
+      "light": "Cambiar a modo oscuro"
+    },
+    "language": {
+      "title": "Idioma",
+      "en": "Inglés",
+      "fr": "Francés",
+      "es": "Español"
+    }
+  }
+}

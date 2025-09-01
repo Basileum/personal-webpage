@@ -1,0 +1,60 @@
+{
+  "nav": {
+    "about": "About me",
+    "projects": "Projects",
+    "experience": "Experience",
+    "contact": "Contact"
+  },
+  "sections": {
+    "about": {
+      "title": "About me",
+      "loading": "Loading profile...",
+      "error": "Error loading profile",
+      "softSkills": "Soft Skills",
+    "technicalSkills": "Technical Skills",
+    "frontend": "Frontend",
+    "backend": "Backend",
+    "data": "Data",
+    "infrastructure": "Infrastructure",
+    "tools": "Tools"
+    },
+    "projects": {
+      "title": "Projects",
+      "subtitle": "A selection of my recent work and client projects",
+      "loading": "Loading projects...",
+      "error": "Error loading projects",
+      "more": "more",
+      "technologies": "Technologies",
+      "description": "Description",
+      "viewDemo": "View Demo",
+      "viewCode": "View Code"
+    },
+    "experience": {
+      "title": "Experience",
+      "subtitle": "My professional journey and work history",
+          "loading": "Loading experience...",
+    "error": "Error loading experience",
+    "present": "Present",
+    "downloadCV": "Download CV"
+    },
+    "contact": {
+      "title": "Contact",
+      "email": "Email:",
+      "github": "GitHub:",
+      "linkedin": "LinkedIn:",
+      "website": "Website:"
+    }
+  },
+  "ui": {
+    "theme": {
+      "dark": "Switch to light mode",
+      "light": "Switch to dark mode"
+    },
+    "language": {
+      "title": "Language",
+      "en": "English",
+      "fr": "French",
+      "es": "Spanish"
+    }
+  }
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Language Sync Test</title>
+</head>
+<body>
+    <h1>Language Synchronization Test</h1>
+    <p>This file is for testing the language synchronization between the language store and i18n.</p>
+    
+    <h2>Test Steps:</h2>
+    <ol>
+        <li>Open the browser console</li>
+        <li>Reload the main portfolio page</li>
+        <li>Check the console logs for language initialization</li>
+        <li>Change language using the language selector</li>
+        <li>Verify that projects and experiences are fetched in the new language</li>
+        <li>Reload the page and verify the selected language persists</li>
+    </ol>
+    
+    <h2>Expected Console Output:</h2>
+    <ul>
+        <li>"Language store initialization - saved language: [lang]"</li>
+        <li>"Language store initialized with: [lang]" or "Language store initialized with default: en"</li>
+        <li>"App mounted - current language: [lang]"</li>
+        <li>"Fetching projects with language: [lang]"</li>
+        <li>"Current i18n locale: [lang]"</li>
+    </ul>
+    
+    <h2>When Changing Language:</h2>
+    <ul>
+        <li>"Changing language to: [lang]"</li>
+        <li>"Setting language to: [lang]"</li>
+        <li>"Language set to: [lang] i18n locale updated"</li>
+        <li>"Data refreshed for language: [lang]"</li>
+    </ul>
+</body>
+</html>
